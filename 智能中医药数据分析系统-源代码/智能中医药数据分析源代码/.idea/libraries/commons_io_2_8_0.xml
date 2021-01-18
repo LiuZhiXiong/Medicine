@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="commons-io-2.8.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/itcmdas_web/web/WEB-INF/lib/commons-io-2.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

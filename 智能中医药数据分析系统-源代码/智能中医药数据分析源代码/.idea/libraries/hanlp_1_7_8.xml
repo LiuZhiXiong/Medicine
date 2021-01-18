@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hanlp-1.7.8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/itcmdas_web/web/WEB-INF/lib/hanlp-1.7.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
