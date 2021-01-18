@@ -1,0 +1,19 @@
+#row1{
+    margin-top: 7%;
+
+}
+#row2{
+    margin-top: 9%;
+}
+.tab-h2{
+    margin-top: 5%;
+    text-align: center;
+    font-family: "arial rounded mt bold";
+    color: #226FBE;
+}
+.tab-p{
+    text-align: center;
+}
+div>p{
+    margin-top: 20px;
+}

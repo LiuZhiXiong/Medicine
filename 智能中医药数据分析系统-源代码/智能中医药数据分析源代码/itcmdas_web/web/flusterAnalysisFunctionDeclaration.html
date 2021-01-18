@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="js/jquery-3.4.1.js"></script>
+<link rel="stylesheet" type="text/css" href="layui/css/layui.css"></link>
+<link rel="stylesheet" type="text/css" href="css/frequencyfunctionDeclartionCSS.css"></link>
+<script src="layui/layui.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>聚类分析功能使用说明</title>
+</head>
+<body>
+
+<div class="layui-fluid">
+    <div class="layui-row">
+        <div class="layui-col-md12" style="margin-top: 10px;">
+            <h1 style="text-align: center">聚类分析功能使用说明</h1>
+        </div>
+    </div>
+
+    <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+            <div id="col2" style="margin-top: 30px">
+                <span>一、选择文件</span>
+                <div id="card" class="layui-card" style="background: #EEEEEE;margin-top: 10px">
+                    <div class="layui-card-body">
+                        为保证能够有正确的药物结果集，要求：
+                    </div>
+                    <div class="layui-card-body">
+                        1.上传文件需要为excel表的xsl格式；
+                    </div>
+                    <div class="layui-card-body">
+                        2.上传的文件模板请在主页面中的标准输入模板中查看并下载
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="layui-row" id="row1">
+        <div class="layui-col-md6">
+            <img src="image/frequency_img1.gif" id="image1" style="margin-left: 80px">
+        </div>
+        <div class="layui-col-md6" >
+            <img src="image/frequency_img2.gif" id="image2" style="margin-left: 80px">
+        </div>
+    </div>
+
+    <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+            <div id="col3" style="margin-top: 30px">
+                <span>二、选择子功能</span>
+                <div id="card3" class="layui-card" style="background: #EEEEEE;margin-top: 10px">
+                    <div class="layui-card-body">
+                        1、获取药对关联度
+                    </div>
+                    <div class="layui-card-body">
+                        2、获取核心药物组合
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        <div class="layui-col-md12" style="text-align: center;margin-top: 50px;margin-bottom: 30px">
+            <img src="image/聚类分析主页面.png" id="image3"/>
+        </div>
+
+
+    <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+            <div id="col4" style="margin-top: 30px">
+                <span>三、获取药物关联度系数</span>
+                <div id="card4" class="layui-card" style="background: #EEEEEE;margin-top: 10px">
+                    <div class="layui-card-body">
+                        1、输入药对关联度阈值（0~1的小数），获得药对关联度系数大于该阈值的所有药对（按药对关联度系数从大到小排序）
+                    </div>
+                    <div class="layui-card-body">
+                        2、结果分析
+                    </div>
+                    <div class="layui-card-body">
+                        2.1：左侧为药对关联度系数大于阈值的所有药对以表格形式显示
+                    </div>
+                    <div class="layui-card-body">
+                        2.2：中间为将左侧的结果以网络图的形式展示，边的权值为药对的关联度系数
+                    </div>
+                    <div class="layui-card-body">
+                        2.3：点击中间网络图中药物结点，将获得药物的详细介绍（包括：药名、功效、性状）
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        <div class="layui-col-md12" style="text-align: center;margin-top: 50px;margin-bottom: 30px">
+            <img src="image/获取药物关联度系数演示.gif" id="image4" />
+        </div>
+
+
+    <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+            <div id="col5" style="margin-top: 30px">
+                <span>四、获取核心药物组合</span>
+                <div id="card5" class="layui-card" style="background: #EEEEEE;margin-top: 10px">
+                    <div class="layui-card-body">
+                        选择药物组合中药物最少数量和最大数量，利用复杂系统熵聚类算法生成核心药物组合表（按照药物数量从大到小排序）
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="layui-col-md12" style="text-align: center;margin-top: 50px;margin-bottom: 30px">
+            <img src="image/获取核心药物组合表演示.gif" id="image5" />
+        </div>
+
+
+    <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+            <div id="col6" style="margin-top: 30px">
+                <span>四、下载功能演示</span>
+                <div id="card6" class="layui-card" style="background: #EEEEEE;margin-top: 10px">
+                    <div class="layui-card-body">
+                        1、对于两个子功能，点击下载按钮便可以得到系统分析生成的离线表格
+                    </div>
+                    <div class="layui-card-body">
+                        2、点击网络中右上角下载按钮，将以图片形式下载网络图保存到本地
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-row" id="row5" style="margin-top: 50px;margin-bottom: 30px">
+        <div class="layui-col-md6" >
+            <img src="image/获取药物关联度系数下载演示.gif" id="image6" style="margin-left: 80px" />
+        </div>
+        <div class="layui-col-md6" >
+            <img src="image/获取核心药物组合下载演示.gif" id="image7" style="margin-left: 80px" />
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
