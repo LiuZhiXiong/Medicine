@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="layui/css/layui.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/tongueAnalysisCss.css"></link>
+    <script src="layui/layui.js"></script>
+    <title>舌诊识别功能说明</title>
+</head>
+<body>
+<div class="layui-container">
+    <div class="layui-col-md12">
+        <div  id="col1">
+            <h1>舌诊识别功能说明</h1>
+        </div>
+<!--        -&#45;&#45;&#45;&#45;-->
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12" id="col2">
+                <div >
+                    <span style="font-size: medium">一、拍摄规范的舌苔图示例</span>
+                    <div id="card" class="layui-card" style="background: #EEEEEE">
+                        <div class="layui-card-body" style="margin-left: 20px" >
+                            1. 拍摄角度正对舌面；
+                        </div>
+                        <div class="layui-card-body" style="margin-left: 20px">
+                            2. 伸舌平展无卷曲，露出舌根，保证舌苔完整；
+                        </div>
+                        <div class="layui-card-body" style="margin-left: 20px" >
+                            3. 光线充足，舌面清晰、无反光、无阴影；
+                        </div>
+                        <div class="layui-card-body"  style="margin-left: 20px">
+                            4. 相机真实物理像素高于 500 万，最大不超过 4M；
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--        第一列图片-->
+
+    <div class="layui-row" id="row1">
+        <div class="layui-col-md6" >
+            <img src="image/tongue1.png" id="tongueImage1">
+        </div>
+        <div class="layui-col-md6">
+            <img src="image/tongue2.png" id="tongueImage2">
+        </div>
+    </div>
+<!--    &#45;&#45;&#45;&#45;-->
+    <div class="layui-col-md12">
+        <!--        -&#45;&#45;&#45;&#45;-->
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12" id="col3">
+                <div >
+                    <span style="font-size: medium">二、拍摄不规范的舌苔图示例</span>
+                    <div id="card3" class="layui-card" style="background: #EEEEEE">
+                        <div class="layui-card-body" style="margin-left: 20px;margin-top: 30px" >
+                            2.1 拍摄距离较远，导致舌苔面积太小
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+<!--    第二列图片-->
+    <div class="layui-row" id="row2">
+        <div class="layui-col-md6" >
+            <img src="image/tongue3.png" id="tongueImage3">
+        </div>
+        <div class="layui-col-md6">
+            <img src="image/tongue4.png" id="tongueImage4">
+        </div>
+    </div>
+
+
+    <!--    &#45;&#45;&#45;&#45;-->
+    <div class="layui-col-md12">
+        <!--        -&#45;&#45;&#45;&#45;-->
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12" id="col4">
+                <div >
+                    <div id="card4" class="layui-card" style="background: #EEEEEE">
+                        <div class="layui-card-body" style="margin-left: 20px;margin-top: 30px" >
+                            2.2 拍摄角度歪斜
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--    第三列图片-->
+    <div class="layui-row" id="row3">
+        <div class="layui-col-md6" >
+            <img src="image/tongue5.png" id="tongueImage5" style="margin-top: 30px">
+        </div>
+        <div class="layui-col-md6">
+            <img src="image/tongue6.png" id="tongueImage6"  style="margin-top: 30px">
+        </div>
+    </div>
+
+
+    <!--    &#45;&#45;&#45;&#45;-->
+    <div class="layui-col-md12">
+
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12" id="col5">
+                <div >
+                    <div id="card5" class="layui-card" style="background: #EEEEEE;">
+                        <div class="layui-card-body" style="margin-left: 40px;" >
+                            2.3 舌面卷曲，不平展
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--    第三列图片-->
+    <div class="layui-row" id="row4">
+        <div class="layui-col-md6" >
+            <img src="image/tongue7.png" id="tongueImage7">
+        </div>
+        <div class="layui-col-md6">
+            <img src="image/tongue8.png" id="tongueImage8">
+        </div>
+    </div>
+
+
+    <!--    &#45;&#45;&#45;&#45;-->
+    <div class="layui-col-md12">
+
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12" id="col6">
+                <div >
+                    <div id="card6" class="layui-card" style="background: #EEEEEE;">
+                        <div class="layui-card-body" style="margin-left: 40px;" >
+                            2.4 伸舌太短
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--    第四列图片-->
+    <div class="layui-row" id="row5">
+        <div class="layui-col-md6" >
+            <img src="image/tongue7.png" id="tongueImage9">
+        </div>
+        <div class="layui-col-md6">
+            <img src="image/tongue8.png" id="tongueImage10">
+        </div>
+    </div>
+
+
+    <!--    &#45;&#45;&#45;&#45;-->
+    <div class="layui-col-md12">
+
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12" id="col7">
+                <div >
+                    <div id="card7" class="layui-card" style="background: #EEEEEE;">
+                        <div class="layui-card-body" style="margin-left: 40px;" >
+                            2.5 前置摄像头开启美颜
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--    第五列图片-->
+    <div class="layui-row" id="row6">
+        <div class="layui-col-md6" >
+            <img src="image/tongue9.png" id="tongueImage11">
+        </div>
+        <div class="layui-col-md6">
+            <img src="image/tongue10.png" id="tongueImage12">
+        </div>
+    </div>
+
+
+    <!--    &#45;&#45;&#45;&#45;-->
+    <div class="layui-col-md12">
+
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12" id="col8">
+                <div >
+                    <div id="card8" class="layui-card" style="background: #EEEEEE;">
+                        <div class="layui-card-body" style="margin-left: 40px;" >
+                            2.5 前置摄像头开启美颜
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--    第六列图片-->
+    <div class="layui-row" id="row7">
+        <div class="layui-col-md6" >
+            <img src="image/tongue13.png" id="tongueImage13">
+        </div>
+        <div class="layui-col-md6">
+            <img src="image/tongue14.png" id="tongueImage14">
+        </div>
+    </div>
+</div>
+</body>
+</html>
