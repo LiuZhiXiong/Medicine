@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Java EE 6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
